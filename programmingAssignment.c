@@ -29,5 +29,17 @@ int main(){
 void *getFile(void *arg){
 	char *file = (char *)arg;
 	printf("Retrieving file: %c\n", *file);
-	return NULL;
+
+	int rand1 = (rand() % (10)) + 1;
+	int rand2 = (rand() % (4)) + 7;
+	printf("%d\n", rand1);
+	printf("%d\n", rand2);
+
+	if(rand1<9){
+		sleep(1);
+	}else{
+		sleep(rand2);
+	}
+	printf("File %c retrieved successfully. Closing thread.", *file);
+	return 0;
 }
