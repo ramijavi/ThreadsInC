@@ -1,4 +1,5 @@
-# ThreadsInC by Javier Ramirez & Eric Darr
+# ThreadsInC
+### By Javier Ramirez & Eric Darr
 This mini-programming assignment simulates the thread execution manifested by a fileserver process.
 
 Develop a multi-threaded program with the following specifications:
